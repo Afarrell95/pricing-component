@@ -1,5 +1,5 @@
 :root{
-    --very-light-grayinsh-blue: hsl(240, 78%, 98%);
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
     --light-grayish-blue: hsl(234, 14%, 74%);
     --grayish-blue: hsl(233, 13%, 49%);
     --dark-grayish-blue: hsl(232, 13%, 33%);
@@ -13,45 +13,101 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--very-light-grayish-blue);
 }
 
 button{
     width: 100%;
     border: none;
     border-radius: 5px;
-    
+    text-transform: uppercase;
+    padding: 1em;
+    margin-top: 2em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    margin-bottom: 3em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    color: var(--grayish-blue);
+    padding: 1.5em;
+    font-size: 2rem;
+}
+
+header span{
+    color: var(--light-grayish-blue);
+}
+
+.switch-container{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    border-bottom: solid var(--light-grayish-blue) 1px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
 }
 
 .price-container{
-    max-width: 70%;
+    min-width: 80%;
     padding: 1em;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
-.annual{
+.price{
+    font-size: 3.5rem;
+    border-bottom: solid var(--light-grayish-blue) 1px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.monthly{
     display: none;
 }
 
 .basic-container, .master-container, .professional-container{
     padding:2em;
-    border-radius: 5px;
+    border-radius: 15px;
+    min-width:33%;
 }
 
 .basic-container, .master-container{
-    border: blue dotted 2px;
- margin-top: 1em;
- margin-bottom: 1em;
+    color: var(--dark-grayish-blue);
+    background: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .professional-container{
- background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
 }
 .btn{
     background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   
 }
 .professional-btn{
     background-color: white;
+    color:  hsl(237, 63%, 64%);
 }
 /*toggle switch style*/
 
