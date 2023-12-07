@@ -20,9 +20,17 @@ body{
     background: var(--very-light-grayish-blue);
 }
 
+main{
+    height: 100vh;
+    background-image: url(./images/bg-top.svg),url(./images/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 50vh;
+}
+
 button{
     width: 100%;
-    border: none;
+    border: 1px solid rgba(255,255,255,.5);
     border-radius: 5px;
     text-transform: uppercase;
     padding: 1em;
@@ -52,10 +60,14 @@ header span{
     color: var(--light-grayish-blue);
 }
 
+
 .switch-container{
-    width:20%;
+    min-width:30%;
+    max-width: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1em;
 }
 
 p{
@@ -103,19 +115,30 @@ p{
 }
 .btn{
     background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-   
+}
+
+.btn:hover{
+    background: white;
+    color: hsl(237, 63%, 64%);
+    border: solid hsl(237, 63%, 64%) 1px;
 }
 .professional-btn{
     background-color: white;
     color:  hsl(237, 63%, 64%);
+}
+
+.professional-btn:hover{
+    background-color: hsl(237, 63%, 64%);
+    color:  white;
+    border: solid white 1px;
 }
 /*toggle switch style*/
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    min-width: 60px;
+    min-height: 34px;
   }
   
  
@@ -150,10 +173,6 @@ p{
     transition: .4s;
   }
   
-  /* input:focus + .slider {
-    box-shadow: 0 0 1px #f321ad;
-  } */
-  
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -166,4 +185,27 @@ p{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+
+  @media screen and (max-width: 1145px){
+    main{
+        background-image: url(./images/bg-top.svg);
+        background-position: right -200% top -50%;
+        background-repeat: no-repeat;
+        background-size: 50vh;
+    }
+    .price-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .basic-container, .master-container, .professional-container{
+        width: 100%;
+    }
+
+    .switch-container{
+        width: 90%;
+    }
+
   }
