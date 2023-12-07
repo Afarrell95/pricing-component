@@ -191,9 +191,9 @@ p{
   @media screen and (max-width: 1145px){
     main{
         background-image: url(./images/bg-top.svg);
-        background-position: right -200% top -50%;
+        background-position: right -200px top;
         background-repeat: no-repeat;
-        background-size: 50vh;
+        
     }
     .price-container{
         flex-direction: column;
