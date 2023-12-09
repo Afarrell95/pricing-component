@@ -12,16 +12,16 @@
 
 Users should be able to:
 
+- View plan pricing according to the toggle switches position.
 - View the optimal layout for the component depending on their device's screen size
-- Control the toggle with both their mouse/trackpad and their keyboard
 
 ### Screenshot
+
+![Alt text](./screenshot.png "screenshot")
 
 ### Links
 
 - Live Site URL: https://afarrell95.github.io/pricing-component/
-
-## My process
 
 ### Built with
 
@@ -32,4 +32,10 @@ Users should be able to:
 
 ### Continued development
 
+TODO:
+
+- Control the toggle with both their mouse/trackpad and their keyboard
+
 ## Author
+
+email: farrella95@gmail.com
